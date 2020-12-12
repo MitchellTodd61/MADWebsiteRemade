@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<!-- ALL images from https://unsplash.com -->
+<!-- Programmed by Mitchell Todd -->
+
+
+
+
+
+<html>
+	<head>
+		<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Responsive Layout</title>
+        <link rel="stylesheet" href="home.css" />
+        <link rel="javascript" href="cssjs.js" />
+    </head>
+<body>
+    <h1>Welcome to St. Clair College Mobile App's Site</h1>
+    <img src="header.jpg" alt="Computer Code"/>
+    
+    <nav>
+    <a href="home.html">Home</a>
+    <a href="program.html">Program</a>
+    <a href="faq.html">FAQ</a>
+    <a href="classes.html">Classes</a>
+    </nav>
+
+<!--Slideshow Here -->
+<div class="section group">
+	<div class="col span">
+	 <!-- Slideshow container -->
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img1.jpg" style="width:100%">
+  <div class="text">Learn how to build Apps</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img2.jpg" style="width:100%">
+  <div class="text">Create Software</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img3.jpg" style="width:100%">
+  <div class="text">Learn and Grow Together</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<!-- Slide Show End -->
+        
+	</div>
+	<div class="col span">
+        <h2><strong>Why Should i come to St. Clair College Today?</strong></h2>
+	<section>
+        <p>This is the essence of what an education at St. Clair College is all about. It’s the place to start your journey in pursuit of your career and lifelong learning. It’s where you will learn new things, expand your mind, create lasting friendships, experience college life, and most importantly get the skills and knowledge you need to get the job! St. Clair College embraces the very best in a college education - excellence in teaching, applied learning in our state-of-the-art labs, numerous student support services to help you succeed, and an amazing campus life experience. St. Clair provides all of this and more for 8,300 full time students who participate in over 100 advanced diplomas, diplomas, degrees and graduate certificates focused in Health, Technology, Business, Media Arts and Social Services. - A quality education that will prepare you for your chosen career path. - A learning environment that will support you. - Campus life that is welcoming and provides you with lots of extracurricular activities. - Professional faculty who know their program, their industry and have great contacts in the community. - Relevant, hands-on knowledge and skills training that set you up for success. For more information go to the St. Clair College website.<a href="http://www.stclaircollege.ca/futurestudents/">Here.</a></p>
+        </section>
+        
+	</div>
+	<div class="col span">
+    <h2>Quick Links</h2>
+	<aside>
+        <ul>
+            <li><a href="http://www.stclaircollege.ca/">St. Clair Site</a></li>
+            <li><a href="http://www.saintsathletics.ca/leagues/front_pageSCSaints.cfm?leagueID=0&clientID=335&link=SCSaints&xx=1b">St. Clair Athletics</a></li>
+            <li><a href="https://stclairemploymentcentre.com/index.html">Employment Center</a></li>
+            <li><a href="http://www.stclaircollege.ca/eatery101/">Eatery 101</a></li>
+            <li><a href="http://www.stclaircollege.ca/foundation/scholarships.html">Scholarships</a></li>
+            <li><a href="http://www.stclaircollege.ca/programs/postsec/">Full Time Programs</a></li>
+            <li><a href="http://www.stclaircollege.ca/registrar/">Tuitions and Fees</a></li>
+        </ul>
+    </aside>
+	</div>
+</div>
+<hr>
+    
+<!-- ///////////////////////////////////////////////////////////////////// TOP SECTION ///////////////////////////////////////////////////////////////////////////////-->
+    
+    <div class="section group">
+	<div class="col span">
+        <h2>Program Overview</h2>
+	<article>
+        <p>This advanced diploma program is designed for those who are interested in developing mobile applications for smartphones, tablets, and the web. Students will learn and apply techniques in writing apps for major platforms common in today’s mobile application marketplace. In addition, students will develop a deep understanding of object-oriented programming principles, cross-platform development both web and native, user interface design, database fundamentals, systems development, and project management, as well as being introduced to game development techniques.</p>
+        </article>
+	</div>
+	<div class="col span">
+        <h2>Program Vocational Learning Outcomes</h2>
+	<article>
+        <p>Program standards apply to all similar programs of instruction offered by publicly-funded colleges across the province. The development of program standards by the Ministry first started in the 1990s to bring more consistency to college programming, broaden the skills of college graduates to include essential employability skills and provide accountability for the quality and relevance of college programs.<a href="http://www.tcu.gov.on.ca/pepg/audiences/colleges/progstan/">More Here.</a></p>
+        </article>
+        
+	</div>
+	<div class="col span">
+        <h2>Each Program Has The Following</h2>
+	<article>
+        <p>Vocational learning outcomes (the vocationally specific learning outcomes which apply to the program in question), Essential employability skills* (the essential employability skills learning outcomes which apply to all programs of instruction), and General education requirement (the requirement for general education in postsecondary programs of instruction).The vocational and essential employability skills components of program standards are expressed in terms of learning outcomes.</p>
+        </article>
+	</div>
+</div>
+<hr>
+    <h2>Your Investments</h2>
+    <article>
+        <ul>
+            <h3>Fees are subject to adjustment each year. The fees for the current academic year are as follows:</h3>
+            <li>Total 1st Year Tuition and Compulsory Fees: $3,502.37.<a href="http://www.stclaircollege.ca/registrar/">Here.</a></li>
+            <li>For textbook prices see the College Bookstore website.<a href="https://www.bkstr.com/stclairwindsorstore/home">Here.</a></li>
+            <li>For a breakdown of tuition and other compulsory fees for Canadian,<br/>U.S. and International students, see Tuition and Fees.<a href="http://www.stclaircollege.ca/registrar/">Here.</a></li>
+            <p>Please be aware that tuition and compulsory fees are subject to adjustment each year. The College reserves the right to change, amend or alter fees as necessary without notice or prejudice.</p>
+        </ul>
+    </article>
+<hr>
+    
+    <!-- ///////////////////////////////////////////////////////////////////// MIDDLE SECTION ///////////////////////////////////////////////////////////////////////////////-->
+    <footer>
+    <div class="section footer">
+	<div class="col span">
+	<p>South Campus<br/>
+        2000 Talbot Road West<br/>
+        Windsor, ON N9A 6S4<br/>
+        Phone: (519) 966-1656<br/>
+        Fax: (519) 972-3811</p>
+	</div>
+	<div class="col span">
+    <a href="http://www.stclaircollege.ca/registrar/">Registers Office</a>
+        <p>(519) 972-2759</p>
+
+    <br/>
+    <a href="http://www.stclaircollege.ca/it/">IT help Desk</a>
+        <p>Password or Login Help:<br/>
+            (519) 972-2727 ext. 2500<br/>
+            Call Toll Free: 1-800-387-0524<br/>
+            <br/>
+            <br/>
+            For more information, email us at: info@stclaircollege.ca.<br/>
+            For Continuing Education inquiries e-mail: coned@stclaircollege.ca.</p>
+	</div>
+	<div class="col span">
+	<p>Peter Nikita<br/>
+        MAD Program Co-ordinator<br/>
+        pnikita@stclaircollege.ca<br/>
+        519 972 2727 ext 4329<br/>
+        Office #32</p>
+        <br/>
+    <p>James Marsh<br/>
+        Chair - School of Business and Information Technology<br/>
+        jmarsh@stclaircollege.ca<br/>
+        519 972 2727 ext 4356<br/>
+        Office #255</p>
+        
+	</div>
+    </div>
+    </footer>
+
+</body>
+</html>

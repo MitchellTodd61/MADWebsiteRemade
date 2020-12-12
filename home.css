@@ -1,0 +1,312 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* //////////////////////////////////////////////////////////// */
+
+/* slideshow style */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  padding-left: 20px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: forestgreen;
+  background:rgba(0,0,0,0.5);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 40px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: blck;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* //////////////////////////////////////////////////////////// */
+
+
+
+/* Background color */
+body{
+    background-color: black;
+}
+/* Header */
+h1{
+    font: 60px impact, sans-serif;
+    text-align: center;
+    padding:40px;
+    background-color: forestgreen;
+}
+h2{
+    border-radius: 25px;
+    text-shadow: 2px 2px orange;
+    background-color: forestgreen; 
+    text-align: center;
+    font:45px candara, sans-serif;
+    padding-bottom: 20px;
+}
+h3{
+    margin-top: 10px;
+}
+/* Sub Titles */
+section{
+    background-color: grey;
+}
+section h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 1000;
+}
+section p{
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 23px;
+}
+/* Article Titles */
+article{
+    background-color: grey
+}
+article h2{
+    padding: 10px;
+    font: 30px Helvetica, sans-serif;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 30px;
+}
+article h3{
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+article p{
+    margin-top: 10px;
+    font-size: 25px;
+    padding: 30px;
+}
+article ul li{
+    padding:20px;
+    text-align: center;
+    font-size: 30px;
+    background-color: forestgreen;
+}
+article ul p{
+    text-align: center;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: lawngreen;
+    text-shadow: 3px 2px black;
+}
+a:visited{
+    color:purple;
+}
+a:hover{
+    color:red;
+}
+img{
+    width:100%;
+    height:600px;
+}
+nav{
+    background-color: forestgreen;
+    padding: 50px;
+    font: 60px OCR A Std, monospace;
+    word-spacing: 300px;
+    text-align: center;
+}
+nav a{
+    background-color: green;
+}
+
+aside{
+    text-align: center;
+    background-color: #00510b;
+    font-size: 40px;
+    padding: 50px;
+    margin-top: 10px;
+}
+aside h2{
+    padding-bottom: 30px;
+    color: white;
+    text-shadow: 4px 3px black;
+}
+aside li{
+    padding: 10px;
+}
+footer{
+    text-align: center;
+    
+}
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+div.section.footer{
+    background-color: black;
+    color:white;
+    padding-bottom: 120px;
+}
+div.section.group:last-of-type{
+    background-color: #00510b;
+}
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:after{ 
+    content:""; 
+    display:table; 
+}
+.group:after{ 
+    clear:both;
+}
+
+
+/*  GRID OF THREE  */
+.span { width: 32.26%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col{
+        margin: 1% 0 1% 0%; 
+    }
+	.span{ width: 100%; }   
+}
+
+
